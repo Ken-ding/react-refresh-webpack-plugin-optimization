@@ -11,12 +11,12 @@
  * [Reference for HMR Error Recovery](https://github.com/webpack/webpack/issues/418#issuecomment-490296365)
  */
 module.exports = function () {
-  const currentExports = __react_refresh_utils__.getModuleExports(module.id);
+  var currentExports = __react_refresh_utils__.getModuleExports(module.id);
   __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.id);
 
   if (module.hot) {
-    const isHotUpdate = !!module.hot.data;
-    const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+    var isHotUpdate = !!module.hot.data;
+    var prevExports = isHotUpdate ? module.hot.data.prevExports : null;
 
     if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
       module.hot.dispose(
